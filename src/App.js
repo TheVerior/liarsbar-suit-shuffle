@@ -21,7 +21,7 @@ function App() {
         setSuit(Random(suits.length))
         setCard(Random(cards.length))
       }}  
-      className="App select-none h-svh w-screen flex flex-col justify-center items-center active:scale-110 active:opacity-50 active:blur-lg duration-100 ease-out transition-all">
+      className="App select-none h-svh w-screen flex flex-col justify-center items-center active:opacity-50 active:blur-lg duration-100 ease-out transition-all">
       <img className="w-64 pointer-events-none" src={images[suit]} alt="" />
       <div className="flex flex-col justify-center items-center gap-0.5">
         <span className="text-2xl font-semibold capitalize">{suits[suit]}s</span>

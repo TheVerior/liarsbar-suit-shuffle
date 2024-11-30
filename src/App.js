@@ -17,7 +17,8 @@ function App() {
   const [card, setCard] = useState(Random(cards.length))
 
   return (
-    <div onClick={() => {
+    <div onPointerDown={() => {
+        setTimeout(()=>{}, 100)
         setSuit(Random(suits.length))
         setCard(Random(cards.length))
       }}  

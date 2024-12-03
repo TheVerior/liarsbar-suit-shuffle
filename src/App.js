@@ -12,7 +12,7 @@ const secureRandomInRange = (n) => {
 
   do {
     crypto.getRandomValues(array);
-  } while (array[0] >= Math.floor((2 ** 32 / max) * max)); // Zapewnia równomierność rozkładu
+  } while (array[0] >= Math.floor((2 ** 32 / max) * max)); 
 
   return array[0] % max;
 }
